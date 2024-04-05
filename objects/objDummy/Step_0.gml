@@ -1,4 +1,3 @@
-
 depth = -y;
 
 alpha = lerp(alpha, 0, 0.1);

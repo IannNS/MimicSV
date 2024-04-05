@@ -1,3 +1,4 @@
+
 //Variaveis de movimentação e animação
 wlkSpeed = 1.5;
 hfacing = 1;
@@ -41,6 +42,7 @@ global.nextRage = global.currentRage;
 
 state = StateFree;
 
+//função para câmera seguir o mouse sem tirar o personagem do foco
 function CameraFollow(){
 	
 	//Pegando valores de largura e altura da câmera
@@ -48,9 +50,11 @@ function CameraFollow(){
 	var cam_h = camera_get_view_height(view_camera[0]);
 
 	//Pegando valores do mouse e fazendo calculo de limite onde a câmera pode atuar
+	//clamp: limita a área em que a câmera vai exibir; 
+	//lerp: pega um ponto médio entre a distância entre o mouse e a posição do personagem.
 	var cam_x = clamp(lerp(x, mouse_x, 0.3) - cam_w/2, 0, room_width - cam_w);
 	var cam_y = clamp(lerp(y, mouse_y, 0.3) - cam_h/2, 0, room_height - cam_h);
 
-	//Alocando posição da camera
+	//Definindo posição da camera
 	camera_set_view_pos(view_camera[0], cam_x, cam_y);
 }

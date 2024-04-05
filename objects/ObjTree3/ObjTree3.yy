@@ -2,16 +2,17 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "ObjTree3",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Props",
     "path": "folders/Objetos/Props.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "ObjPropFather",
+    "path": "objects/ObjPropFather/ObjPropFather.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

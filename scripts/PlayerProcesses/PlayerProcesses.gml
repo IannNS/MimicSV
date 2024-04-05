@@ -7,29 +7,16 @@ function StateFree(){
 	
 	if hmovement != 0 hfacing = hmovement;
 	
-	if keyboard_check(vk_shift){
-		wlkSpeed = 2.5;
-		sprite_set_speed(walkSideStick, 12, spritespeed_framespersecond);
-		sprite_set_speed(walkDownStick, 12, spritespeed_framespersecond);
-		sprite_set_speed(walkUpStick, 12, spritespeed_framespersecond);
-	} else{
-		wlkSpeed = 1.5;
-		sprite_set_speed(walkSideStick, 10, spritespeed_framespersecond);
-		sprite_set_speed(walkDownStick, 10, spritespeed_framespersecond);
-		sprite_set_speed(walkUpStick, 10, spritespeed_framespersecond);
-	}
 	//Mover personagem para direção dos valores 
-		if hmovement != 0 or vmovement != 0{
-			dir = point_direction(0, 0, hmovement, vmovement);
-			//part_system_position(movPart, x, y);
-			//part_system_angle(movPart, dir -270);
+	if hmovement != 0 or vmovement != 0{
+		dir = point_direction(0, 0, hmovement, vmovement);
 			
-			hmovement = lengthdir_x(wlkSpeed, dir);
-			vmovement = lengthdir_y(wlkSpeed, dir);
+		hmovement = lengthdir_x(wlkSpeed, dir);
+		vmovement = lengthdir_y(wlkSpeed, dir);
 		
-			x += hmovement;
-			y += vmovement;
-		}
+		x += hmovement;
+		y += vmovement;
+}
 		
 
 //Função de colisões (possível alteração)
@@ -80,14 +67,24 @@ function Collision(){
 				sprite_index = idleUpStick;
 			}
 		}
+		if keyboard_check_pressed(vk_shift) && dodgeEnergy >= 10 && (hmovement != 0 or vmovement != 0){
+			dodgeSpeed = 6;
+			dodgeEnergy -= 10;
+			alarm[1] = 180;
+			
+			alarm[0] = 10;
+			dodgeDir = point_direction(0, 0, hmovement, vmovement);
+			state = StateShortDodge;
+		}
 		
 		if keyboard_check_pressed(vk_space) && dodgeEnergy >= 25 && (hmovement != 0 or vmovement != 0){
+			dodgeSpeed = 3;
 			dodgeEnergy -= 25;
 			alarm[1] = 180;
 			
 			alarm[0] = 32;
 			dodgeDir = point_direction(0, 0, hmovement, vmovement);
-			state = StateDodge;
+			state = StateLongDodge;
 		}
 		
 		else if mouse_check_button_pressed(mb_left){
@@ -106,22 +103,33 @@ function Collision(){
 		}
 }
 	
-function StateDodge(){
+function StateLongDodge(){
 	hmovement = lengthdir_x(dodgeSpeed, dodgeDir);
 	vmovement = lengthdir_y(dodgeSpeed, dodgeDir);
-	
 	if dir = 270{
 		sprite_index = dodgeDown;
 	}
-			
 	else if dir = 45 or dir = 0 or dir = 135 or dir = 315 or dir = 180 or dir = 225{
 		sprite_index = dodgeSide;
 	}
-			
 	else if dir = 90{
 		sprite_index = dodgeUp;
 	}
-	
+	x += hmovement;
+	y += vmovement;
+}
+function StateShortDodge(){
+	hmovement = lengthdir_x(dodgeSpeed, dodgeDir);
+	vmovement = lengthdir_y(dodgeSpeed, dodgeDir);
+	if dir = 270{
+		
+	}
+	else if dir = 45 or dir = 0 or dir = 135 or dir = 315 or dir = 180 or dir = 225{
+		
+	}
+	else if dir = 90{
+		
+	}
 	x += hmovement;
 	y += vmovement;
 }

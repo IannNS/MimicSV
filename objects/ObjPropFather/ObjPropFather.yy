@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "ObjLog",
-  "eventList": [],
+  "name": "ObjPropFather",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Props",
     "path": "folders/Objetos/Props.yy",
   },
-  "parentObjectId": {
-    "name": "ObjPropFather",
-    "path": "objects/ObjPropFather/ObjPropFather.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "log",
-    "path": "sprites/log/log.yy",
+    "name": "PropFatherSprite",
+    "path": "sprites/PropFatherSprite/PropFatherSprite.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

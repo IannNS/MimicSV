@@ -1,5 +1,6 @@
 color = c_white;
 alpha = 0;
+
 layer_enable_fx("ScreenShake", false);
 
 function StatePatrol(){
