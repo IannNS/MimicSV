@@ -121,6 +121,7 @@ function StateLongDodge(){
 	x += hmovement;
 	y += vmovement;
 }
+	
 function StateShortDodge(){
 	//Instancia de criação da sombra da esquiva curta
 	with (instance_create_depth(x, y, depth+1, ObjDashTrail)){

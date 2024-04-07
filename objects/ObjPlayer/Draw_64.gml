@@ -3,7 +3,7 @@ window_set_cursor(cr_none);
 cursor_sprite = sprMouse;
 
 //Rage Bar
-draw_healthbar(12, 25, 95, 35, global.maxRage, c_black, c_white, c_red, 0, false, false);
+draw_healthbar(12, 25, 95, 35, global.currentRage, c_black, c_white, c_red, 0, false, false);
 
 //Hud
 draw_sprite_ext(sprPlayerHUD, 0, 10, 10, 2, 2, 0, c_white, 1);

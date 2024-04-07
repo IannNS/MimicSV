@@ -1,6 +1,10 @@
 //Variaveis de log
 logVar = noone;
 
+//Variaveis de efeitos visuais
+alpha = 0;
+color = #ffffff;
+
 //Variaveis de movimentação e animação
 wlkSpeed = 1.5;
 hfacing = 1;
@@ -35,7 +39,7 @@ dodgeEnergy = maxDodgeEnergy;
 attackDir = 0;
 comboCount = 0;
 
-//Variaveis de vida 
+//Variaveis de vida
 global.maxLife = 4;
 global.currentLife = global.maxLife;
 global.nextLife = global.currentLife;
@@ -49,7 +53,6 @@ state = StateFree;
 
 //função para câmera seguir o mouse sem tirar o personagem do foco
 function CameraFollow(){
-	
 	//Pegando valores de largura e altura da câmera
 	var cam_w = camera_get_view_width(view_camera[0]);
 	var cam_h = camera_get_view_height(view_camera[0]);

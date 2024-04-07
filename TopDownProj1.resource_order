@@ -32,6 +32,8 @@
     {"name":"MenuSprites","order":4,"path":"folders/Sprites/MenuSprites.yy",},
     {"name":"PropSprites","order":3,"path":"folders/Sprites/PropSprites.yy",},
     {"name":"TileMapSprites","order":2,"path":"folders/Sprites/TileMapSprites.yy",},
+    {"name":"Enemies","order":6,"path":"folders/Objetos/Enemies.yy",},
+    {"name":"EnemySprites","order":7,"path":"folders/Sprites/EnemySprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"comboSide2","order":1,"path":"sprites/comboSide2/comboSide2.yy",},
@@ -56,6 +58,7 @@
     {"name":"comboDiagDown2_hb","order":4,"path":"sprites/comboDiagDown2_hb/comboDiagDown2_hb.yy",},
     {"name":"comboUp3","order":2,"path":"sprites/comboUp3/comboUp3.yy",},
     {"name":"comboDiagDown3","order":2,"path":"sprites/comboDiagDown3/comboDiagDown3.yy",},
+    {"name":"ObjEnemyTest","order":1,"path":"objects/ObjEnemyTest/ObjEnemyTest.yy",},
     {"name":"ObjTree1","order":1,"path":"objects/ObjTree1/ObjTree1.yy",},
     {"name":"btnQuit","order":4,"path":"objects/btnQuit/btnQuit.yy",},
     {"name":"comboDiagDown2","order":1,"path":"sprites/comboDiagDown2/comboDiagDown2.yy",},

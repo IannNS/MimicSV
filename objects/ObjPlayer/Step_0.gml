@@ -2,6 +2,8 @@
 layer_depth("Vignhet", -room_height)
 layer_depth("ScreenShake", -room_height);
 
+alpha = lerp(alpha, 0, 0.1);
+
 //Chamando a função para a câmera seguir
 CameraFollow();
 
@@ -28,23 +30,25 @@ if ((xprevious != x or yprevious != y) and canCreateDust = true and ObjPlayer.st
 
 //Função de recarregamento de Vigor
 if alarm[1] <= 0{
+	global.currentRage += 0.1;
 	dodgeEnergy  += 1;
 }
+
+//Define o valor máximo de Vida e Rage do personagem 
+global.maxLife = clamp(global.maxLife, 0, 4);
+global.currentLife = clamp(global.currentLife, 0, 4);
+global.maxRage = clamp(global.maxRage, 0, 100);
+global.currentRage = clamp(global.currentRage, 0, 100);
 
 //Define o valor máximo de Vigor do personagem
 dodgeEnergy = clamp(dodgeEnergy, 0, 100);
 
-//Criação de variáveis de funções para testes
-if keyboard_check_pressed(vk_f1){
-	global.currentLife -= 1;
-	alarm[6] = 30;
-	fx_set_parameter(screenShakePar, "g_Magnitude", 2);
-	layer_enable_fx("ScreenShake", true);
-}
-
-if keyboard_check_pressed(vk_f2){
+//Tecla de cura
+if keyboard_check_pressed(ord("H")) && global.currentRage >= 20 && global.currentLife < global.maxLife{
+	alarm[1] = 600;
+	
+	global.currentRage -= 20;
 	global.currentLife += 1;
+	color = #00fb3f;
+	alpha = 1;
 }
-
-logVar = fx_get_parameter(screenShakePar, "g_Magnitude");
-show_debug_message(logVar);

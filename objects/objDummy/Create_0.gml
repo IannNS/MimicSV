@@ -7,7 +7,9 @@ function StatePatrol(){
 	objDummy.image_index = 0;
 	
 	if(place_meeting(x, y, ObjPlayer) && ObjPlayer.state = StateCombat){
+		global.currentRage += 5;
 		alarm[0] = 30;
+		
 		alpha = 1;
 		layer_enable_fx("ScreenShake", true);
 		state = StateTookDamage;

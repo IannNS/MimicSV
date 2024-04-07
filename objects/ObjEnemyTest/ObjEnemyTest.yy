@@ -1,17 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "ObjPropFather",
+  "name": "ObjEnemyTest",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"ObjPlayer","path":"objects/ObjPlayer/ObjPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Props",
-    "path": "folders/Objetos/Props.yy",
+    "name": "Enemies",
+    "path": "folders/Objetos/Enemies.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,9 +30,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "PropFatherSprite",
-    "path": "sprites/PropFatherSprite/PropFatherSprite.yy",
+    "name": "SprEnemyTest",
+    "path": "sprites/SprEnemyTest/SprEnemyTest.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
