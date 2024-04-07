@@ -83,6 +83,7 @@
     {"name":"sprPlayerShadow","order":7,"path":"sprites/sprPlayerShadow/sprPlayerShadow.yy",},
     {"name":"comboSide3","order":2,"path":"sprites/comboSide3/comboSide3.yy",},
     {"name":"btnOptions","order":2,"path":"objects/btnOptions/btnOptions.yy",},
+    {"name":"ObjDashTrail","order":8,"path":"objects/ObjDashTrail/ObjDashTrail.yy",},
     {"name":"comboDiagUp2_hb","order":4,"path":"sprites/comboDiagUp2_hb/comboDiagUp2_hb.yy",},
     {"name":"comboDown2","order":1,"path":"sprites/comboDown2/comboDown2.yy",},
     {"name":"rockTest2","order":4,"path":"sprites/rockTest2/rockTest2.yy",},

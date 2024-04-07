@@ -120,6 +120,7 @@
     {"id":{"name":"sprPlayerShadow","path":"sprites/sprPlayerShadow/sprPlayerShadow.yy",},},
     {"id":{"name":"comboSide3","path":"sprites/comboSide3/comboSide3.yy",},},
     {"id":{"name":"btnOptions","path":"objects/btnOptions/btnOptions.yy",},},
+    {"id":{"name":"ObjDashTrail","path":"objects/ObjDashTrail/ObjDashTrail.yy",},},
     {"id":{"name":"grassPropsTileSet","path":"tilesets/grassPropsTileSet/grassPropsTileSet.yy",},},
     {"id":{"name":"comboDiagUp2_hb","path":"sprites/comboDiagUp2_hb/comboDiagUp2_hb.yy",},},
     {"id":{"name":"comboDown2","path":"sprites/comboDown2/comboDown2.yy",},},

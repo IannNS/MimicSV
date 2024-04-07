@@ -11,7 +11,6 @@ function StatePatrol(){
 		alpha = 1;
 		layer_enable_fx("ScreenShake", true);
 		state = StateTookDamage;
-		
 		hitDir = point_direction(x, y, mouse_x, mouse_y);
 		
 		dmgPart = part_system_create(damageParticle);
@@ -22,7 +21,7 @@ function StatePatrol(){
 }
 
 function StateTookDamage(){
-	
+	//única função desse state é fazer com que a animação do dummy levando dano ocorra
 }
 
 state = StatePatrol;

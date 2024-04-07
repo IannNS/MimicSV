@@ -33,3 +33,18 @@ if alarm[1] <= 0{
 
 //Define o valor máximo de Vigor do personagem
 dodgeEnergy = clamp(dodgeEnergy, 0, 100);
+
+//Criação de variáveis de funções para testes
+if keyboard_check_pressed(vk_f1){
+	global.currentLife -= 1;
+	alarm[6] = 30;
+	fx_set_parameter(screenShakePar, "g_Magnitude", 2);
+	layer_enable_fx("ScreenShake", true);
+}
+
+if keyboard_check_pressed(vk_f2){
+	global.currentLife += 1;
+}
+
+logVar = fx_get_parameter(screenShakePar, "g_Magnitude");
+show_debug_message(logVar);

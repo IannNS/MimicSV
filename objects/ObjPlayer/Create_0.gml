@@ -1,8 +1,13 @@
+//Variaveis de log
+logVar = noone;
 
 //Variaveis de movimentação e animação
 wlkSpeed = 1.5;
 hfacing = 1;
 dir = 0;
+
+//Variaveis da layer de screenshake
+screenShakePar = layer_get_fx("ScreenShake");
 
 //Particula trilha de passos
 canCreateDust = true;

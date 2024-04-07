@@ -9,19 +9,22 @@ draw_healthbar(12, 25, 95, 35, global.maxRage, c_black, c_white, c_red, 0, false
 draw_sprite_ext(sprPlayerHUD, 0, 10, 10, 2, 2, 0, c_white, 1);
 
 //Life
-var numberOfBars = global.maxLife;
+var numberOfLifes = global.maxLife;
 
 var xx = 12;
 var yy = 12;
 
-for(var index = 0; index < numberOfBars; index++){
-	if(global.currentLife > index){
+for(var index = 0; index < numberOfLifes; index++){
+	if global.currentLife > index{
 		draw_sprite_ext(sprLifeBar, 0, xx, yy, 2, 2, 0, c_white, 1);
+		
+		if global.currentLife = 1{
+			draw_sprite_ext(sprLifeBar, 2, xx, yy, 2, 2, 0, c_white, 1);
+		}
 	}
 	
 	else{
 		draw_sprite_ext(sprLifeBar, 1, xx, yy, 2, 2, 0, c_white, 1);
 	}
-	
 	xx += 12;
 }

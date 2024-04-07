@@ -87,7 +87,10 @@ function Collision(){
 			state = StateLongDodge;
 		}
 		
-		else if mouse_check_button_pressed(mb_left){
+		else if mouse_check_button_pressed(mb_left) && dodgeEnergy >= 5{
+			dodgeEnergy -= 5;
+			alarm[1] = 180;
+			
 			if comboCount = 0{
 				image_index = 0;
 				alarm[2] = 20;
@@ -119,6 +122,12 @@ function StateLongDodge(){
 	y += vmovement;
 }
 function StateShortDodge(){
+	//Instancia de criação da sombra da esquiva curta
+	with (instance_create_depth(x, y, depth+1, ObjDashTrail)){
+		sprite_index = other.sprite_index;
+		image_blend = c_white;
+		image_alpha = 0.7;
+	}
 	hmovement = lengthdir_x(dodgeSpeed, dodgeDir);
 	vmovement = lengthdir_y(dodgeSpeed, dodgeDir);
 	if dir = 270{
