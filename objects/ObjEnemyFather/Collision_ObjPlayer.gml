@@ -13,7 +13,7 @@ if canDealDamage = true && ObjPlayer.state != StateLongDodge && attackReady = tr
 	ObjPlayer.alpha = 1;
 }
 
-if canTakeDamage = true && ObjPlayer.state = StateCombat{
+if canTakeDamage = true && ObjPlayer.state = StateCombat && attackReady = false{
 	canTakeDamage = false;
 	alarm[0] = 30;
 	

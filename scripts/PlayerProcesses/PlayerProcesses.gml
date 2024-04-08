@@ -71,7 +71,7 @@ function Collision(){
 		if keyboard_check_pressed(vk_shift) && dodgeEnergy >= 10 && (hmovement != 0 or vmovement != 0){
 			dodgeSpeed = 6;
 			dodgeEnergy -= 10;
-			alarm[1] = 180;
+			alarm[1] = 60;
 			
 			alarm[0] = 10;
 			dodgeDir = point_direction(0, 0, hmovement, vmovement);
@@ -81,7 +81,7 @@ function Collision(){
 		if keyboard_check_pressed(vk_space) && dodgeEnergy >= 25 && (hmovement != 0 or vmovement != 0){
 			dodgeSpeed = 3;
 			dodgeEnergy -= 25;
-			alarm[1] = 180;
+			alarm[1] = 60;
 			
 			alarm[0] = 32;
 			dodgeDir = point_direction(0, 0, hmovement, vmovement);
@@ -90,7 +90,7 @@ function Collision(){
 		
 		else if mouse_check_button_pressed(mb_left) && dodgeEnergy >= 5{
 			dodgeEnergy -= 5;
-			alarm[1] = 180;
+			alarm[1] = 60;
 			
 			if comboCount = 0{
 				image_index = 0;

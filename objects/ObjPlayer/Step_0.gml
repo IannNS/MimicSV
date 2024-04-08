@@ -8,7 +8,7 @@ alpha = lerp(alpha, 0, 0.1);
 CameraFollow();
 
 //Definição de profundidade do personagem
-depth = -y;
+depth = layer_get_depth("Instances");
 
 //Definição de teclas de movimentação
 up = keyboard_check(ord("W"));
@@ -55,3 +55,6 @@ if keyboard_check_pressed(ord("H")) && global.currentRage >= 20 && global.curren
 	color = #00fb3f;
 	alpha = 1;
 }
+
+logVar = layer_get_depth("Instances");
+show_debug_message(logVar);
