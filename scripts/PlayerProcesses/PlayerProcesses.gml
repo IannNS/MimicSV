@@ -104,6 +104,12 @@ function Collision(){
 			attackDir = point_direction(x, y, mouse_x, mouse_y);
 			state = StateCombat;
 		}
+		
+		if global.currentLife <= 0{
+			image_index = 0;
+			alarm[8] = 140;
+			state = StateDeath;
+		}
 }
 	
 function StateLongDodge(){
@@ -304,4 +310,8 @@ function StateCombat(){
 			image_xscale = hfacing;
 		}
 	}
+}
+	
+function StateDeath(){
+	sprite_index = sprDeathAnim;
 }

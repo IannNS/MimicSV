@@ -30,8 +30,11 @@ if ((xprevious != x or yprevious != y) and canCreateDust = true and ObjPlayer.st
 
 //Função de recarregamento de Vigor
 if alarm[1] <= 0{
-	global.currentRage += 0.1;
 	dodgeEnergy  += 1;
+}
+
+if alarm[7] <= 0{
+	global.currentRage += 0.1;
 }
 
 //Define o valor máximo de Vida e Rage do personagem 
@@ -45,7 +48,7 @@ dodgeEnergy = clamp(dodgeEnergy, 0, 100);
 
 //Tecla de cura
 if keyboard_check_pressed(ord("H")) && global.currentRage >= 20 && global.currentLife < global.maxLife{
-	alarm[1] = 600;
+	alarm[7] = 600;
 	
 	global.currentRage -= 20;
 	global.currentLife += 1;
