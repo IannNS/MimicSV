@@ -1,5 +1,6 @@
 /// @description Take Life away from the Player
-if canDealDamage = true && ObjPlayer.state = StateFree{
+if canDealDamage = true && ObjPlayer.state != StateLongDodge && attackReady = true{
+	attackReady = false;
 	canDealDamage = false;
 	alarm[0] = 60;
 
@@ -24,20 +25,3 @@ if EnemyLife = 0 && instance_exists{
 }
 
 EnemyLife = clamp(EnemyLife, 0, 3);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

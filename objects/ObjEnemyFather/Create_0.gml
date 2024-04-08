@@ -2,18 +2,4 @@
 canDealDamage = true;
 canTakeDamage = true;
 EnemyLife = 3;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+attackReady = true;

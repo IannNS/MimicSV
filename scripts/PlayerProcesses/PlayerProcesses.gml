@@ -67,6 +67,7 @@ function Collision(){
 				sprite_index = idleUpStick;
 			}
 		}
+		
 		if keyboard_check_pressed(vk_shift) && dodgeEnergy >= 10 && (hmovement != 0 or vmovement != 0){
 			dodgeSpeed = 6;
 			dodgeEnergy -= 10;
@@ -313,5 +314,9 @@ function StateCombat(){
 }
 	
 function StateDeath(){
+	display_set_gui_size(0,0);
+	
+	depth = -room_height;
+	layer_depth("Background", depth+100);
 	sprite_index = sprDeathAnim;
 }

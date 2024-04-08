@@ -1,7 +1,9 @@
 //Mouse
 window_set_cursor(cr_none);
 cursor_sprite = sprMouse;
-
+if(state = StateDeath){
+	cursor_sprite = sprNone;
+}
 //Rage Bar
 draw_healthbar(12, 25, 95, 35, global.currentRage, c_black, c_white, c_red, 0, false, false);
 

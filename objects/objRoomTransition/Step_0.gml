@@ -21,6 +21,7 @@ switch(state){
 			if room_exists(targetRoom) room_goto(targetRoom);
 		}
 	break;
+	
 	case states.IN:
 		if (subImageIndex > 0){
 			subImageIndex -= subImageIncriment;
