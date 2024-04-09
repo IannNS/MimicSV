@@ -5,6 +5,7 @@ layer_depth("ScreenShake", -room_height);
 alpha = lerp(alpha, 0, 0.1);
 
 //Chamando a função para a câmera seguir
+calcDir();
 CameraFollow();
 
 //Definição de profundidade do personagem
@@ -56,5 +57,5 @@ if keyboard_check_pressed(ord("H")) && global.currentRage >= 20 && global.curren
 	alpha = 1;
 }
 
-logVar = layer_get_depth("Instances");
+logVar = trueDir;
 show_debug_message(logVar);

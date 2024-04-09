@@ -1,3 +1,4 @@
+draw_sprite_ext(shadow, image_index, x, y+8, 1.25, 0.5, 0, c_white, 1);
 draw_self();
 
 if(alpha > 0){
