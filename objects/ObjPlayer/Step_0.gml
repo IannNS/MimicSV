@@ -4,7 +4,7 @@ layer_depth("ScreenShake", -room_height);
 
 alpha = lerp(alpha, 0, 0.1);
 
-//Chamando a função para a câmera seguir
+//Chamada de funções gerais do jogador
 calcDir();
 CameraFollow();
 
@@ -41,21 +41,13 @@ if alarm[7] <= 0{
 //Define o valor máximo de Vida e Rage do personagem 
 global.maxLife = clamp(global.maxLife, 0, 4);
 global.currentLife = clamp(global.currentLife, 0, 4);
+
 global.maxRage = clamp(global.maxRage, 0, 100);
 global.currentRage = clamp(global.currentRage, 0, 100);
 
 //Define o valor máximo de Vigor do personagem
 dodgeEnergy = clamp(dodgeEnergy, 0, 100);
 
-//Tecla de cura
-if keyboard_check_pressed(ord("H")) && global.currentRage >= 20 && global.currentLife < global.maxLife{
-	alarm[7] = 600;
-	
-	global.currentRage -= 20;
-	global.currentLife += 1;
-	color = #00fb3f;
-	alpha = 1;
-}
-
-logVar = trueDir;
+//Chamada de variáveis para log (teste)
+logVar = canCreateDust;
 show_debug_message(logVar);

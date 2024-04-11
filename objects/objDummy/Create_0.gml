@@ -16,7 +16,7 @@ function StatePatrol(){
 		hitDir = point_direction(x, y, mouse_x, mouse_y);
 		
 		dmgPart = part_system_create(damageParticle);
-		part_system_position(dmgPart, x, y-20);
+		part_system_position(dmgPart, bbox_top/2, bbox_right/2);
 		part_system_depth(dmgPart, objDummy.depth);
 		part_system_angle(dmgPart, hitDir - 90);
 	}

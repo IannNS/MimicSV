@@ -68,6 +68,16 @@ function Collision(){
 			}
 		}
 		
+		//Tecla de cura
+		if keyboard_check_pressed(ord("H")) && global.currentRage >= 20 && global.currentLife < global.maxLife{
+			alarm[7] = 600;
+	
+			global.currentRage -= 20;
+			global.currentLife += 1;
+			color = #00fb3f;
+			alpha = 1;
+		}
+		
 		if keyboard_check_pressed(vk_shift) && dodgeEnergy >= 10 && (hmovement != 0 or vmovement != 0){
 			dodgeSpeed = 6;
 			dodgeEnergy -= 10;
