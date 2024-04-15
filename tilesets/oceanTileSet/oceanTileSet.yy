@@ -16,8 +16,8 @@
     "path": "folders/Conjuntos de tiles.yy",
   },
   "spriteId": {
-    "name": "oceanV2",
-    "path": "sprites/oceanV2/oceanV2.yy",
+    "name": "watterTileSet",
+    "path": "sprites/watterTileSet/watterTileSet.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

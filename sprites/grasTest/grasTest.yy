@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "grasTest",
-  "bbox_bottom": 319,
+  "name": "GrasTest",
+  "bbox_bottom": 88,
   "bbox_left": 0,
-  "bbox_right": 287,
+  "bbox_right": 95,
   "bbox_top": 16,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"94678c15-30b2-48aa-a561-b898f1774d66",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f9a249b8-6281-43e5-97a8-3f5461731fb6",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 320,
+  "height": 112,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"66afae74-59c9-46fb-9692-33c06c6a4b6f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5dedac56-1590-4a45-b8ef-cf49adfffcc9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "grasTest",
+    "name": "GrasTest",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"94678c15-30b2-48aa-a561-b898f1774d66","path":"sprites/grasTest/grasTest.yy",},},},"Disabled":false,"id":"66846502-f987-4bf4-aae8-5765dec349cb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f9a249b8-6281-43e5-97a8-3f5461731fb6","path":"sprites/GrasTest/GrasTest.yy",},},},"Disabled":false,"id":"c017935d-9ba7-47bf-8e68-bdef7b1948e1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 320,
+  "width": 112,
 }

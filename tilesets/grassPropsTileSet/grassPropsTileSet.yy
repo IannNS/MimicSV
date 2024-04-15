@@ -16,8 +16,8 @@
     "path": "folders/Conjuntos de tiles.yy",
   },
   "spriteId": {
-    "name": "grassDetail",
-    "path": "sprites/grassDetail/grassDetail.yy",
+    "name": "GrassV2",
+    "path": "sprites/GrassV2/GrassV2.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

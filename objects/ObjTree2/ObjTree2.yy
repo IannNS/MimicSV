@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "treeTest2",
-    "path": "sprites/treeTest2/treeTest2.yy",
+    "name": "tree2",
+    "path": "sprites/tree2/tree2.yy",
   },
   "spriteMaskId": null,
   "visible": true,
