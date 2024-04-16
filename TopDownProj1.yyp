@@ -94,6 +94,7 @@
     {"id":{"name":"comboDiagUp3","path":"sprites/comboDiagUp3/comboDiagUp3.yy",},},
     {"id":{"name":"comboDiagDown2_hb","path":"sprites/comboDiagDown2_hb/comboDiagDown2_hb.yy",},},
     {"id":{"name":"comboUp3","path":"sprites/comboUp3/comboUp3.yy",},},
+    {"id":{"name":"fireFlie","path":"particles/fireFlie/fireFlie.yy",},},
     {"id":{"name":"comboSide1","path":"sprites/comboSide1/comboSide1.yy",},},
     {"id":{"name":"comboDiagDown3","path":"sprites/comboDiagDown3/comboDiagDown3.yy",},},
     {"id":{"name":"comboDown1","path":"sprites/comboDown1/comboDown1.yy",},},
