@@ -9,7 +9,7 @@ calcDir();
 CameraFollow();
 
 //Definição de profundidade do personagem
-depth = layer_get_depth("Instances");
+depth = clamp(depth, -1, -y);
 
 //Definição de teclas de movimentação
 up = keyboard_check(ord("W"));
