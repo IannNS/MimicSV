@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"objDummy",
+  "%Name":"objMinorTank",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objDummy",
+  "name":"objMinorTank",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
     "path":"folders/Objetos/Enemies.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"ObjEnemyFather",
+    "path":"objects/ObjEnemyFather/ObjEnemyFather.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprDummy",
-    "path":"sprites/sprDummy/sprDummy.yy",
+    "name":"MinorTankSit",
+    "path":"sprites/MinorTankSit/MinorTankSit.yy",
   },
   "spriteMaskId":null,
   "visible":true,
