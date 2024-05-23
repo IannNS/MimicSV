@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"GrassDetailV3",
-    "path":"sprites/GrassDetailV3/GrassDetailV3.yy",
+    "name":"GrassDetailV4",
+    "path":"sprites/GrassDetailV4/GrassDetailV4.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
