@@ -23,7 +23,6 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"8a2e3dc6-56c8-4183-b214-2557f92a998a","blendMode":0,"displayName":"default","isLocked":false,"name":"8a2e3dc6-56c8-4183-b214-2557f92a998a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"435c43e0-3213-4321-bb5d-c0fd92d5fd5d","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"435c43e0-3213-4321-bb5d-c0fd92d5fd5d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"treeLeafTest6",
   "nineSlice":null,
