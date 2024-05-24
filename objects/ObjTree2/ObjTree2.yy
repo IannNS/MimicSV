@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"treeLeafTest5",
-    "path":"sprites/treeLeafTest5/treeLeafTest5.yy",
+    "name":"treeLeafTestV2",
+    "path":"sprites/treeLeafTestV2/treeLeafTestV2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
