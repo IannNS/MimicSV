@@ -10,8 +10,8 @@
     "path":"folders/Objetos/Props.yy",
   },
   "parentObjectId":{
-    "name":"ObjPropFather",
-    "path":"objects/ObjPropFather/ObjPropFather.yy",
+    "name":"objPropFather",
+    "path":"objects/objPropFather/objPropFather.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"treeLeafTest3",
-    "path":"sprites/treeLeafTest3/treeLeafTest3.yy",
+    "name":"treeLeafTestV2",
+    "path":"sprites/treeLeafTestV2/treeLeafTestV2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

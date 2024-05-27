@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"ObjTree1",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"ObjTree1",
   "overriddenProperties":[],
@@ -10,8 +12,8 @@
     "path":"folders/Objetos/Props.yy",
   },
   "parentObjectId":{
-    "name":"ObjPropFather",
-    "path":"objects/ObjPropFather/ObjPropFather.yy",
+    "name":"objPropFather",
+    "path":"objects/objPropFather/objPropFather.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

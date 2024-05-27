@@ -12,8 +12,8 @@
     "path":"folders/Objetos/Props.yy",
   },
   "parentObjectId":{
-    "name":"ObjPropFather",
-    "path":"objects/ObjPropFather/ObjPropFather.yy",
+    "name":"objPropFather",
+    "path":"objects/objPropFather/objPropFather.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
