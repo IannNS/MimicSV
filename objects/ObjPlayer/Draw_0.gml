@@ -1,3 +1,4 @@
+draw_sprite(sprPlayerShadow, 0, x, y);
 draw_sprite_ext(sprite_index, image_index, x, y, hfacing, 1, 0, c_white, 1);
 
 if(dodgeEnergy < 100){

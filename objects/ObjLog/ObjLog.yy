@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"log",
-    "path":"sprites/log/log.yy",
+    "name":"log3",
+    "path":"sprites/log3/log3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

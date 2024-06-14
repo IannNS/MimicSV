@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"ObjRock2",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"ObjRock2",
   "overriddenProperties":[],
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"rockTest2",
-    "path":"sprites/rockTest2/rockTest2.yy",
+    "name":"rockTest5",
+    "path":"sprites/rockTest5/rockTest5.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,7 +1,16 @@
 {
   "$GMTileSet":"",
   "%Name":"grassPropsTileSet",
-  "autoTileSets":[],
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"grass1","closed_edge":false,"name":"grass1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        1,85,84,0,74,0,0,0,75,0,0,0,0,0,0,0,64,0,0,0,55,0,0,0,54,0,0,0,65,0,0,0,0,0,34,0,35,0,45,0,44,0,0,0,
+        0,0,0,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"wall1","closed_edge":false,"name":"wall1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        2,0,0,0,89,0,0,0,88,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,4,0,0,0,59,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"grass2","closed_edge":false,"name":"grass2","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[1,14,15,55,24,64,0,0,25,0,54,0,65,0,0,0,],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
@@ -18,8 +27,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"GrassDetailV5",
-    "path":"sprites/GrassDetailV5/GrassDetailV5.yy",
+    "name":"GrassDetail7",
+    "path":"sprites/GrassDetail7/GrassDetail7.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

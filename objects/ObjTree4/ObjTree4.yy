@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"ObjTree4",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"ObjTree4",
   "overriddenProperties":[],
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"treeLeafTestV2",
-    "path":"sprites/treeLeafTestV2/treeLeafTestV2.yy",
+    "name":"treeTest3",
+    "path":"sprites/treeTest3/treeTest3.yy",
   },
   "spriteMaskId":null,
   "visible":true,
