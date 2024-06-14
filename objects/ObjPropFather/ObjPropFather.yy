@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PropFatherSprite",
-    "path":"sprites/PropFatherSprite/PropFatherSprite.yy",
+    "name":"propFatherSprite",
+    "path":"sprites/propFatherSprite/propFatherSprite.yy",
   },
   "spriteMaskId":null,
   "visible":false,

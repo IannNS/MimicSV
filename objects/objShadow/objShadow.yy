@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite77",
-    "path":"sprites/Sprite77/Sprite77.yy",
+    "name":"shadowControllerSprite",
+    "path":"sprites/shadowControllerSprite/shadowControllerSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"ObjRock2",
+  "%Name":"objPauseGame",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ObjRock2",
+  "name":"objPauseGame",
   "overriddenProperties":[],
   "parent":{
-    "name":"Props",
-    "path":"folders/Objetos/Props.yy",
+    "name":"MenuObjects",
+    "path":"folders/Objetos/MenuObjects.yy",
   },
-  "parentObjectId":{
-    "name":"objPropFather",
-    "path":"objects/objPropFather/objPropFather.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"rockTest2",
-    "path":"sprites/rockTest2/rockTest2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"rockTest4",
-    "path":"sprites/rockTest4/rockTest4.yy",
+    "name":"rockTest3",
+    "path":"sprites/rockTest3/rockTest3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

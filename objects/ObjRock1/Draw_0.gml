@@ -1,3 +1,3 @@
 /// @description Inserir descrição aqui
-draw_sprite_ext(rockTest6, 0, x, y+8, 1, -1, 0, c_black, 0.3);
+draw_sprite_ext(rockTest1, 0, x, y+8, 1, -1, 0, c_black, 0.3);
 draw_self();

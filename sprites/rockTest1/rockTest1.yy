@@ -5,21 +5,21 @@
   "bbox_bottom":74,
   "bbox_left":38,
   "bbox_right":60,
-  "bbox_top":65,
+  "bbox_top":66,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"00b9c8ff-8c1a-4583-b23f-dfbd9144ad51","name":"00b9c8ff-8c1a-4583-b23f-dfbd9144ad51","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2324939e-8dd6-4fc1-939e-2b353c571aa1","name":"2324939e-8dd6-4fc1-939e-2b353c571aa1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":96,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4b5580c0-c922-4f29-9509-fa039a3fcec0","blendMode":0,"displayName":"default","isLocked":false,"name":"4b5580c0-c922-4f29-9509-fa039a3fcec0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"03f4b4c6-a9ee-4646-b97e-ab209152b2d6","blendMode":0,"displayName":"default","isLocked":false,"name":"03f4b4c6-a9ee-4646-b97e-ab209152b2d6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"rockTest1",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"00b9c8ff-8c1a-4583-b23f-dfbd9144ad51","path":"sprites/rockTest1/rockTest1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"08f55aa4-06d6-4e63-978e-e58aaa7f1562","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2324939e-8dd6-4fc1-939e-2b353c571aa1","path":"sprites/rockTest1/rockTest1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"00242b6c-9de7-451e-ba4e-9f745f507701","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -6,7 +6,10 @@ alpha = lerp(alpha, 0, 0.1);
 
 //Chamada de funções gerais do jogador
 calcDir();
-CameraFollow();
+if(global.paused != true) CameraFollow();
+
+//Check da função de pause
+if(global.paused = true) exit;
 
 //Definição de profundidade do personagem
 depth = clamp(depth, -1, -y);
@@ -49,5 +52,5 @@ global.currentRage = clamp(global.currentRage, 0, 100);
 dodgeEnergy = clamp(dodgeEnergy, 0, 100);
 
 //Chamada de variáveis para log (teste)
-logVar = canCreateDust;
+logVar = noone;
 show_debug_message(logVar);

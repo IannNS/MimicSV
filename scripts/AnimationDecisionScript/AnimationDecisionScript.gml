@@ -1,5 +1,4 @@
 //Esse script é responsável pela decisão das animações do jogador, com base na classe selecionada.
-
 function IdleAnimation(){
 	if trueDir != 3 || trueDir != 7{
 		image_index = spriteIdleSide;
