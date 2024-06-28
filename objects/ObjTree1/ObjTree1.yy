@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"treeTest3",
-    "path":"sprites/treeTest3/treeTest3.yy",
+    "name":"treeTest4",
+    "path":"sprites/treeTest4/treeTest4.yy",
   },
   "spriteMaskId":null,
   "visible":true,

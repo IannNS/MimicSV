@@ -94,6 +94,7 @@
     {"id":{"name":"waterFallStream","path":"particles/waterFallStream/waterFallStream.yy",},},
     {"id":{"name":"wavesParticle","path":"particles/wavesParticle/wavesParticle.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"TestZone","path":"rooms/TestZone/TestZone.yy",},},
     {"id":{"name":"AnimationDecisionScript","path":"scripts/AnimationDecisionScript/AnimationDecisionScript.yy",},},
     {"id":{"name":"BasicEnemyProcesses","path":"scripts/BasicEnemyProcesses/BasicEnemyProcesses.yy",},},
@@ -142,6 +143,7 @@
     {"id":{"name":"gameVersionSprite","path":"sprites/gameVersionSprite/gameVersionSprite.yy",},},
     {"id":{"name":"GrassDetailV5","path":"sprites/GrassDetailV5/GrassDetailV5.yy",},},
     {"id":{"name":"GrassDetailV7","path":"sprites/GrassDetailV7/GrassDetailV7.yy",},},
+    {"id":{"name":"GrassDetailV8","path":"sprites/GrassDetailV8/GrassDetailV8.yy",},},
     {"id":{"name":"idleDown","path":"sprites/idleDown/idleDown.yy",},},
     {"id":{"name":"idleDownStick","path":"sprites/idleDownStick/idleDownStick.yy",},},
     {"id":{"name":"idleSide","path":"sprites/idleSide/idleSide.yy",},},
@@ -171,6 +173,7 @@
     {"id":{"name":"treeLeafTestV2","path":"sprites/treeLeafTestV2/treeLeafTestV2.yy",},},
     {"id":{"name":"treeLeafTestV3","path":"sprites/treeLeafTestV3/treeLeafTestV3.yy",},},
     {"id":{"name":"treeTest3","path":"sprites/treeTest3/treeTest3.yy",},},
+    {"id":{"name":"treeTest4","path":"sprites/treeTest4/treeTest4.yy",},},
     {"id":{"name":"walkDown","path":"sprites/walkDown/walkDown.yy",},},
     {"id":{"name":"walkDownStick","path":"sprites/walkDownStick/walkDownStick.yy",},},
     {"id":{"name":"walkSide","path":"sprites/walkSide/walkSide.yy",},},
@@ -185,6 +188,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"TestZone","path":"rooms/TestZone/TestZone.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
