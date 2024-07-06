@@ -4,6 +4,8 @@ layer_depth("ScreenShake", -room_height);
 
 alpha = lerp(alpha, 0, 0.1);
 
+//Testando o pull
+
 //Chamada de funções gerais do jogador
 calcDir();
 if(global.paused != true) CameraFollow();
