@@ -12,7 +12,7 @@ if(global.paused != true) CameraFollow();
 if(global.paused = true) exit;
 
 //Definição de profundidade do personagem
-depth = clamp(depth, -1, -y);
+depth = -y;
 
 //Definição de teclas de movimentação
 up = keyboard_check(ord("W"));
@@ -52,5 +52,3 @@ global.currentRage = clamp(global.currentRage, 0, 100);
 dodgeEnergy = clamp(dodgeEnergy, 0, 100);
 
 //Chamada de variáveis para log (teste)
-logVar = noone;
-show_debug_message(logVar);

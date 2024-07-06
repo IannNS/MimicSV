@@ -1,15 +1,17 @@
 //Esse script é responsável pela decisão das animações do jogador, com base na classe selecionada.
 function IdleAnimation(){
-	if trueDir != 3 || trueDir != 7{
-		image_index = spriteIdleSide;
-	}
+	while ObjPlayer.state = StateFree && StateFree.hmovement = 0 && StateFree.vmovement = 0{
+		if trueDir != 3 || trueDir != 7{
+			image_index = spriteIdleSide;
+		}
 	
-	else if truDir = 3{
-		image_index = spriteIdleUp;
-	}
+		else if truDir = 3{
+			image_index = spriteIdleUp;
+		}
 	
-	else if trueDir = 7{
-		image_index = spriteIdleDown;
+		else if trueDir = 7{
+			image_index = spriteIdleDown;
+		}
 	}
 }
 

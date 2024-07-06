@@ -11,8 +11,8 @@ function CameraFollow(){
 	
 	/*Função descrita: Limite o valor máximo da posição do foco da câmera entre o X do mouse, o X 
 	do jogador e o tamanho da cena menos o tamanho da câmera*/
-	var cam_x = clamp(lerp(x, mouse_x, 0.3) - cam_w/2, 0, room_width - cam_w);
-	var cam_y = clamp(lerp(y, mouse_y, 0.3) - cam_h/2, 0, room_height - cam_h);
+	var cam_x = clamp(lerp(x, mouse_x, 0.2/*<- para alterar o limite de viagem da câmera, altere esse valor*/) - cam_w/2, 0, room_width - cam_w);
+	var cam_y = clamp(lerp(y, mouse_y, 0.2/*<- para alterar o limite de viagem da câmera, altere esse valor*/) - cam_h/2, 0, room_height - cam_h);
 
 	//Definindo posição da camera
 	if state = StateDeath{

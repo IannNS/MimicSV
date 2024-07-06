@@ -27,8 +27,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"GrassDetailV8",
-    "path":"sprites/GrassDetailV8/GrassDetailV8.yy",
+    "name":"GrassDetail10",
+    "path":"sprites/GrassDetail10/GrassDetail10.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
