@@ -6,6 +6,8 @@ alpha = lerp(alpha, 0, 0.1);
 
 //Testando o pull
 
+//Testando a regra
+
 //Chamada de funções gerais do jogador
 calcDir();
 if(global.paused != true) CameraFollow();
