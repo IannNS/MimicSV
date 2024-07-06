@@ -8,6 +8,12 @@ alpha = lerp(alpha, 0, 0.1);
 
 //Testando a regra
 
+// estou testando a brench
+
+//mds tem que funfar
+
+//vou apagar depois
+
 //Chamada de funções gerais do jogador
 calcDir();
 if(global.paused != true) CameraFollow();
