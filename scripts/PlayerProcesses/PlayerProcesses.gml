@@ -6,6 +6,8 @@ function StateFree(){
 	vmovement =	down - up;
 	
 	if hmovement != 0 hfacing = hmovement;
+
+	alarm[9] -= 1;
 	
 	//Mover personagem para direção dos valores 
 	if hmovement != 0 or vmovement != 0{

@@ -11,3 +11,5 @@ if(alpha > 0){
 	gpu_set_fog(false,color,0,0);
 }
 
+
+

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"BasicEnemyProcesses",
+  "%Name":"BasicEnemyAI",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"BasicEnemyProcesses",
+  "name":"BasicEnemyAI",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
