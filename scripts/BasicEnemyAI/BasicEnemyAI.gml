@@ -6,6 +6,23 @@ function StatePatrol(){
 			state = StateTarget;
 		}
 	}
+	
+	if(spawnDistance > 160){
+		var x1 = x;
+		var y1 = y;
+		var x2 = xstart;
+		var y2 = ystart;
+		
+		if(mp_grid_path(ObjPathmaker.overallGrid, pathBackToSpawn, x1, y1, x2, y2, true)){
+			path_start(pathBackToSpawn, 0.5, path_action_stop, false);
+			if(los == true && playerDistance < 140){
+				path_end();
+				playerClose = true;
+				sprite_index = MinorTankTarget;
+				state = StateTarget;
+			}
+		}
+	}
 }
 
 function StateTarget(){
@@ -53,13 +70,13 @@ function StateAttack(){
 		y += vmovement;
 	
 		if(playerDistance < 5 && los == false){
-			alarm[0] = 100;
+			alarm[1] = 100;
 			sprite_index = MinorTankTarget;
 			attackPlayer = false;
 		}
 	}
 	
-	if(alarm[0] < 0 && los = false && attackPlayer = false){
+	if(alarm[1] < 0 && los = false && attackPlayer = false){
 		playerClose = false;
 		sprite_index = MinorTankPatrol;
 		state = StatePatrol;
