@@ -1,5 +1,10 @@
 //Variaveis de log
+alarm[9] = 50;
 logVar = noone;
+
+//Variaveis de target dos inimigos
+lastSeenX = 0;
+lastSeenY = 0;
 
 //Variaveis de efeitos visuais
 alpha = 0;

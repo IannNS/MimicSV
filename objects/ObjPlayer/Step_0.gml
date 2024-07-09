@@ -46,6 +46,11 @@ if alarm[7] <= 0{
 	global.currentRage += 0.1;
 }
 
+if alarm[9] <= 0 && objMinorTank.los = true{
+	lastSeenX = xprevious;
+	lastSeenY = yprevious;
+	alarm[9] = 50;
+}
 //Define o valor máximo de Vida e Rage do personagem 
 global.maxLife = clamp(global.maxLife, 0, 4);
 global.currentLife = clamp(global.currentLife, 0, 4);

@@ -3,19 +3,19 @@
 
 // Inherit the parent event
 event_inherited();
-startX = x;
-startY = y;
+
+spawnDistance = 0;
+lastPointSeen = 0;
+
+lastSeenX = 0;
+lastSeenY = 0;
 
 los = false;
 playerDistance = 0;
 
-lastX = 0;
-lastY = 0;
-
 hmovement = 0;
 vmovement = 0;
 wlkSpeed = 1;
-
 
 playerClose = false;
 attackPlayer = false;
