@@ -20,3 +20,38 @@ wlkSpeed = 1;
 playerClose = false;
 attackPlayer = false;
 
+
+//Criando a movimentação aleatória da IA
+/*
+state = noone;
+time_state = room_speed * 10;
+timer_state = 0;
+
+
+state_change = funcion(_state)
+{
+	time_state--;
+	timer_state = irandom(time_state);
+	if(timer_state == time_state or time_state <= 0)
+	{
+		state = _state;
+		time_state = room_speed * 10;
+	}
+}
+
+stoped = function()
+{
+	state_change(walkingAway);
+	
+}
+
+walkingAway = function()
+{
+	show_debug_message("Estou passeando");
+	
+	image_blend = c_blue;
+	
+	state_change(stoped);
+}
+
+*/
