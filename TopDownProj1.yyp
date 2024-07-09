@@ -73,6 +73,7 @@
     {"id":{"name":"ObjHugeStump","path":"objects/ObjHugeStump/ObjHugeStump.yy",},},
     {"id":{"name":"ObjLog","path":"objects/ObjLog/ObjLog.yy",},},
     {"id":{"name":"objMinorTank","path":"objects/objMinorTank/objMinorTank.yy",},},
+    {"id":{"name":"ObjPathmaker","path":"objects/ObjPathmaker/ObjPathmaker.yy",},},
     {"id":{"name":"objPauseGame","path":"objects/objPauseGame/objPauseGame.yy",},},
     {"id":{"name":"ObjPlayer","path":"objects/ObjPlayer/ObjPlayer.yy",},},
     {"id":{"name":"objPropFather","path":"objects/objPropFather/objPropFather.yy",},},

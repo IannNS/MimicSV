@@ -50,6 +50,7 @@
     {"name":"ObjHugeStump","order":13,"path":"objects/ObjHugeStump/ObjHugeStump.yy",},
     {"name":"ObjLog","order":5,"path":"objects/ObjLog/ObjLog.yy",},
     {"name":"objMinorTank","order":3,"path":"objects/objMinorTank/objMinorTank.yy",},
+    {"name":"ObjPathmaker","order":5,"path":"objects/ObjPathmaker/ObjPathmaker.yy",},
     {"name":"objPauseGame","order":8,"path":"objects/objPauseGame/objPauseGame.yy",},
     {"name":"ObjRock1","order":6,"path":"objects/ObjRock1/ObjRock1.yy",},
     {"name":"ObjRock2","order":7,"path":"objects/ObjRock2/ObjRock2.yy",},
