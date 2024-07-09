@@ -1,6 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
+pathIdle = path_add();
 pathToTarget = path_add();
 pathBackToSpawn = path_add();
 spawnDistance = 0;
