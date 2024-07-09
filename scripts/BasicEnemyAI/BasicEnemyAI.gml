@@ -1,6 +1,11 @@
 function StatePatrol(){
+	if(spawnDistance < 160 && playerClose == false){
+		
+	}
+	
 	if (attackPlayer == false && los == true){
 		if(playerDistance < 140){
+			path_end();
 			playerClose = true;
 			sprite_index = MinorTankTarget;
 			state = StateTarget;
@@ -20,6 +25,10 @@ function StatePatrol(){
 				playerClose = true;
 				sprite_index = MinorTankTarget;
 				state = StateTarget;
+			}
+			
+			if(spawnDistance < 60){
+				path_end();
 			}
 		}
 	}
@@ -47,27 +56,28 @@ function StateTarget(){
 }
 
 function StateAttack(){
+	path_end();
 	playerDistance = point_distance(x, y, ObjPlayer.x, ObjPlayer.y);
 	if(los == true && attackPlayer == true && playerDistance > 80){
-	
-		dir = point_direction(x, y, ObjPlayer.x,  ObjPlayer.y);
-				
-		hmovement = lengthdir_x(wlkSpeed, dir);
-		vmovement = lengthdir_y(wlkSpeed, dir);
-		
-		x += hmovement;
-		y += vmovement;
+		var x1 = x;
+		var y1 = y;
+		var x2 = ObjPlayer.x;
+		var y2 = ObjPlayer.y;
+		if(mp_grid_path(ObjPathmaker.overallGrid, pathToTarget, x1, y1, x2, y2, true)){
+			path_start(pathToTarget, 1, path_action_stop, false);
+		}
 	}
 
 	if(los == false && attackPlayer == true){
+		path_end();
 		playerDistance = point_distance(x, y, ObjPlayer.lastSeenX,  ObjPlayer.lastSeenY);
-		dir = point_direction(x, y, ObjPlayer.lastSeenX,  ObjPlayer.lastSeenY);
-			
-		hmovement = lengthdir_x(wlkSpeed, dir);
-		vmovement = lengthdir_y(wlkSpeed, dir);
-		
-		x += hmovement;
-		y += vmovement;
+		var x1 = x;
+		var y1 = y;
+		var x2 = ObjPlayer.lastSeenX;
+		var y2 = ObjPlayer.lastSeenY;
+		if(mp_grid_path(ObjPathmaker.overallGrid, pathToTarget, x1, y1, x2, y2, true)){
+			path_start(pathToTarget, 1, path_action_stop, false);
+		}
 	
 		if(playerDistance < 5 && los == false){
 			alarm[1] = 100;
