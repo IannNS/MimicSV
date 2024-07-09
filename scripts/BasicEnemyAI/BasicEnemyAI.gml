@@ -1,6 +1,9 @@
 function StatePatrol(){
 	if(spawnDistance < 160 && playerClose == false){
-		
+		var x1 = x;
+		var y1 = y;
+		var x2 = irandom_range(x, y+160 || y-160);
+		var y2 = irandom_range(y, y+160 || y-160);
 	}
 	
 	if (attackPlayer == false && los == true){
