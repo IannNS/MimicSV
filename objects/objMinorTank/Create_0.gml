@@ -1,59 +1,33 @@
 /// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
 
+//Alarme de decisão de direção no estado de idle
+alarm[2] = 0;
+
+//Criação dos caminhos do algoritmo A*
 pathIdle = path_add();
 pathToTarget = path_add();
 pathBackToSpawn = path_add();
 spawnDistance = 0;
 
+//Variaveis para salvar aonde o player foi visto a última vez
 lastSeenX = 0;
 lastSeenY = 0;
 
+//Variaveis de para aonde o jogador deve ir no estado de idle
+xgo = 0;
+ygo = 0;
+
+//los = line of sight, para verificar se há visão com o jogador
 los = false;
+//distância até o jogador
 playerDistance = 0;
 
-hmovement = 0;
-vmovement = 0;
-wlkSpeed = 1;
-
+//Jogador está próximo
 playerClose = false;
+//Jogador está próximo o suficiente para atacar
 attackPlayer = false;
 
+//Define ataque do inimigo
+chooseAttack = 0;
 
-
-/*
-state = noone;
-time_state = room_speed * 10;
-timer_state = 0;
-
-
-state_change = funcion(_state)
-{
-	time_state--;
-	timer_state = irandom(time_state);
-	if(timer_state == time_state or time_state <= 0)
-	{
-		state = _state;
-		time_state = room_speed * 10;
-	}
-}
-
-stoped = function()
-{
-	state_change(walkingAway);
-	
-}
-
-walkingAway = function()
-{
-	show_debug_message("Estou passeando");
-	
-	image_blend = c_blue;
-	
-	state_change(stoped);
-}
-
-*/
-
-
-
+state = StatePatrol;
