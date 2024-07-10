@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"EnemySprites",
-    "path":"folders/Sprites/EnemySprites.yy",
+    "name":"MinorTank",
+    "path":"folders/Sprites/EnemySprites/World1/MinorTank.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

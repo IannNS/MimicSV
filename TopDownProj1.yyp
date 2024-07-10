@@ -43,6 +43,8 @@
     {"$GMFolder":"","%Name":"Sons","folderPath":"folders/Sons.yy","name":"Sons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"EnemySprites","folderPath":"folders/Sprites/EnemySprites.yy","name":"EnemySprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"World1","folderPath":"folders/Sprites/EnemySprites/World1.yy","name":"World1","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"MinorTank","folderPath":"folders/Sprites/EnemySprites/World1/MinorTank.yy","name":"MinorTank","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"MenuSprites","folderPath":"folders/Sprites/MenuSprites.yy","name":"MenuSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PropSprites","folderPath":"folders/Sprites/PropSprites.yy","name":"PropSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"TileMapSprites","folderPath":"folders/Sprites/TileMapSprites.yy","name":"TileMapSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
