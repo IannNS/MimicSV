@@ -1,5 +1,5 @@
 /// @description Dodge Alarm
-comboCount = 2;
+instance_activate_object(ObjWeapon);
 state = StateFree;
 
 

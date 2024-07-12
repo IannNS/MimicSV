@@ -25,12 +25,6 @@ spriteWalkSide = walkSide;
 spriteWalkUp = walkUp;
 spriteWalkDown = walkDown;
 
-spriteAttacksSide = comboSide1;
-spriteAttacksDiagUp = comboDiagUp1;
-spriteAttackUp = comboUp1;
-spriteAttackDown = comboDown1;
-spriteAttackDiagDown = comboDiagDown1;
-
 deathSprite = sprDeathAnim;
 
 //Variaveis da layer de screenshake
