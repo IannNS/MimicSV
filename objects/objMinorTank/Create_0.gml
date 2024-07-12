@@ -31,6 +31,3 @@ attackPlayer = false;
 chooseAttack = 0;
 
 state = StatePatrol;
-
-// Inherit the parent event
-event_inherited();
