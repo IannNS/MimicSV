@@ -56,4 +56,9 @@ global.currentRage = clamp(global.currentRage, 0, 100);
 //Define o valor máximo de Vigor do personagem
 dodgeEnergy = clamp(dodgeEnergy, 0, 100);
 
+
+if(!instance_exists(ObjWeapon) && keyboard_check_pressed(ord("1"))){
+	instance_create_layer(ObjPlayer.x, ObjPlayer.y, "Instances", ObjWeapon);
+}
+
 //Chamada de variáveis para log (teste)

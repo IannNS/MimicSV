@@ -5,7 +5,21 @@ function StateFree(){
 	hmovement = right - left;
 	vmovement =	down - up;
 	
-	if hmovement != 0 hfacing = hmovement;
+	if(instance_exists(ObjWeapon)){
+		dir = point_direction(x, y, mouse_x, mouse_y);
+		
+		if(dir > 90) && (dir < 270){
+			hfacing = -1;
+		}
+		
+		else{
+			hfacing = 1;
+		}
+	}
+	
+	else{
+		if hmovement != 0 hfacing = hmovement;
+	}
 
 	alarm[9] -= 1;
 	
@@ -18,7 +32,7 @@ function StateFree(){
 		
 		x += hmovement;
 		y += vmovement;
-}
+	}
 		
 
 //Função de colisões (possível alteração)
@@ -40,101 +54,142 @@ function Collision(){
 			if !place_meeting(x, y + sign(targetY - y), all) y += sign(targetY - y);
 	}
 }
-		//animção de movimentação
-		if hmovement != 0 or vmovement != 0{
-			if keyboard_check(ord("D")) or keyboard_check(ord("A")){
+	//animção de movimentação
+	if hmovement != 0 or vmovement != 0{
+			
+		if(instance_exists(ObjWeapon)){
+			dir = point_direction(x, y, mouse_x, mouse_y);
+			
+			//direita e esquerda
+			if(dir < 65) || (dir > 295) || (dir > 115) || (dir < 245){
 				sprite_index = walkSideStick;
 			}
 			
-			else if keyboard_check(ord("W")){
+			//cima
+			if(dir > 65) && (dir < 115){
 				sprite_index = walkUpStick;
 			}
 			
-			else if keyboard_check(ord("S")){
+			//baixo
+			if(dir > 245) && (dir < 295){
 				sprite_index = walkDownStick;
 			}
 		}
-		
-		//animação de idle
+			
 		else{
-			if dir = 270{
-				sprite_index = idleDownStick;
+			if keyboard_check(ord("D")) or keyboard_check(ord("A")){
+				sprite_index = walkSide;
 			}
 			
-			else if dir = 45 or dir = 0 or dir = 135 or dir = 315 or dir = 180 or dir = 225{
+			else if keyboard_check(ord("W")){
+				sprite_index = walkUp;
+			}
+			
+			else if keyboard_check(ord("S")){
+				sprite_index = walkDown;
+			}
+		}
+	}
+		
+	//animação de idle
+	else{
+		
+		if(instance_exists(ObjWeapon)){
+			dir = point_direction(x, y, mouse_x, mouse_y);
+			
+			//direita e esquerda
+			if(dir < 65) || (dir > 295) || (dir > 115) || (dir < 245){
 				sprite_index = idleSideStick;
 			}
 			
-			else if dir = 90{
+			//cima
+			if(dir > 65) && (dir < 115){
 				sprite_index = idleUpStick;
 			}
-		}
-		
-		//Tecla de cura
-		if keyboard_check_pressed(ord("H")) && global.currentRage >= 20 && global.currentLife < global.maxLife{
-			alarm[7] = 600;
-	
-			global.currentRage -= 20;
-			global.currentLife += 1;
-			color = #00fb3f;
-			alpha = 1;
-		}
-		
-		if keyboard_check_pressed(vk_shift) && dodgeEnergy >= 10 && (hmovement != 0 or vmovement != 0){
-			dodgeSpeed = 6;
-			dodgeEnergy -= 10;
-			alarm[1] = 60;
 			
-			alarm[0] = 10;
-			dodgeDir = point_direction(0, 0, hmovement, vmovement);
-			state = StateShortDodge;
-		}
-		
-		if keyboard_check_pressed(vk_space) && dodgeEnergy >= 25 && (hmovement != 0 or vmovement != 0){
-			dodgeSpeed = 3;
-			dodgeEnergy -= 25;
-			alarm[1] = 60;
-			
-			alarm[0] = 32;
-			dodgeDir = point_direction(0, 0, hmovement, vmovement);
-			state = StateLongDodge;
-		}
-		
-		else if mouse_check_button_pressed(mb_left) && dodgeEnergy >= 5{
-			dodgeEnergy -= 5;
-			alarm[1] = 60;
-			
-			if comboCount = 0{
-				image_index = 0;
-				alarm[2] = 20;
-			} else if comboCount = 1{
-				image_index = 0;
-				alarm[2] = 16;
-			} else if comboCount = 2{
-				image_index = 0;
-				alarm[2] = 16;
+			//baixo
+			if(dir > 245) && (dir < 295){
+				sprite_index = idleDownStick;
 			}
-			attackDir = point_direction(x, y, mouse_x, mouse_y);
-			state = StateCombat;
 		}
 		
-		if global.currentLife <= 0{
-			image_index = 0;
-			alarm[8] = 140;
-			state = StateDeath;
+		else{
+			if dir = 270{
+				sprite_index = idleDown;
+			}
+			
+			else if dir = 45 or dir = 0 or dir = 135 or dir = 315 or dir = 180 or dir = 225{
+				sprite_index = idleSide;
+			}
+			
+			else if dir = 90{
+				sprite_index = idleUp;
+			}
 		}
+	}
+		
+	//Tecla de cura
+	if keyboard_check_pressed(ord("H")) && global.currentRage >= 20 && global.currentLife < global.maxLife{
+		alarm[7] = 600;
+	
+		global.currentRage -= 20;
+		global.currentLife += 1;
+		color = #00fb3f;
+		alpha = 1;
+	}
+		
+	if keyboard_check_pressed(vk_shift) && dodgeEnergy >= 10 && (hmovement != 0 or vmovement != 0){
+		dodgeSpeed = 6;
+		dodgeEnergy -= 10;
+		alarm[1] = 60;
+			
+		alarm[0] = 10;
+		instance_deactivate_object(ObjWeapon);
+			
+		dodgeDir = point_direction(0, 0, hmovement, vmovement);
+		state = StateShortDodge;
+	}
+		
+	if keyboard_check_pressed(vk_space) && dodgeEnergy >= 25 && (hmovement != 0 or vmovement != 0){
+		dodgeSpeed = 3;
+		dodgeEnergy -= 25;
+		alarm[1] = 60;
+			
+		alarm[0] = 32;
+		instance_deactivate_object(ObjWeapon);
+			
+		dodgeDir = point_direction(0, 0, hmovement, vmovement);
+		
+		state = StateLongDodge;
+	}
+		
+	if mouse_check_button_pressed(mb_left) && dodgeEnergy >= 5{
+		dodgeEnergy -= 5;
+		alarm[1] = 60;
+		alarm[2] = 40;
+			
+		attackDir = point_direction(x, y, mouse_x, mouse_y);
+		state = StateCombat;
+	}
+		
+	if global.currentLife <= 0{
+		image_index = 0;
+		alarm[8] = 140;
+		state = StateDeath;
+	}
 }
 	
 function StateLongDodge(){
 	hmovement = lengthdir_x(dodgeSpeed, dodgeDir);
 	vmovement = lengthdir_y(dodgeSpeed, dodgeDir);
-	if dir = 270{
+	
+	if dodgeDir = 270{
 		sprite_index = dodgeDown;
 	}
-	else if dir = 45 or dir = 0 or dir = 135 or dir = 315 or dir = 180 or dir = 225{
+	else if dodgeDir = 45 or dodgeDir = 0 or dodgeDir = 135 or dodgeDir = 315 or dodgeDir = 180 or dodgeDir = 225{
 		sprite_index = dodgeSide;
 	}
-	else if dir = 90{
+	else if dodgeDir = 90{
 		sprite_index = dodgeUp;
 	}
 	x += hmovement;
@@ -148,179 +203,30 @@ function StateShortDodge(){
 		image_blend = c_white;
 		image_alpha = 0.7;
 	}
+	
 	hmovement = lengthdir_x(dodgeSpeed, dodgeDir);
 	vmovement = lengthdir_y(dodgeSpeed, dodgeDir);
-	if dir = 270{
-		
-	}
-	else if dir = 45 or dir = 0 or dir = 135 or dir = 315 or dir = 180 or dir = 225{
-		
-	}
-	else if dir = 90{
-		
-	}
+	
 	x += hmovement;
 	y += vmovement;
 }
 	
 function StateCombat(){
-	if attackDir >= 250 && attackDir <= 290{
-		hfacing = 1;
-		dir = 270;
-		if (comboCount = 0){
-			sprite_index = comboDown1;
-			mask_index = comboDown1_hb;
-			image_xscale = hfacing;
+	
+	if(instance_exists(ObjWeapon)){
+		//lados
+		if(attackDir < 65) || (attackDir > 295) || (attackDir > 115) || (attackDir < 245){
+			sprite_index = StickAttackSide;
 		}
-		else if (comboCount = 1){
-			sprite_index = comboDown2;
-			mask_index = comboDown2_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 2){
-			sprite_index = comboDown3;
-			mask_index = comboDown3_hb;
-			image_xscale = hfacing;
-		}
-	}
 			
-	else if attackDir >= 0 && attackDir <= 20 or attackDir >= 340 && attackDir <= 360{
-		hfacing = 1;
-		dir = 0;
-		if (comboCount = 0){
-			sprite_index = comboSide1;
-			mask_index = comboSide1_hb;
-			image_xscale = hfacing;
+		//cima
+		if(attackDir > 65) && (attackDir < 115){
+			sprite_index = StickAttackUp;
 		}
-		else if (comboCount = 1){
-			sprite_index = comboSide2;
-			mask_index = comboSide2_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 2){
-			sprite_index = comboSide3;
-			mask_index = comboSide3_hb;
-			image_xscale = hfacing;
-		}
-	}
-	
-	else if attackDir >= 160 && attackDir <= 200{
-		hfacing = -1;
-		dir = 0;
-		if (comboCount = 0){
-			sprite_index = comboSide1;
-			mask_index = comboSide1_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 1){
-			sprite_index = comboSide2;
-			mask_index = comboSide2_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 2){
-			sprite_index = comboSide3;
-			mask_index = comboSide3_hb;
-			image_xscale = hfacing;
-		}
-	}
 			
-	else if attackDir >= 80 && attackDir <= 110{
-		hfacing = 1;
-		dir = 90;
-		if (comboCount = 0){
-			sprite_index = comboUp1;
-			mask_index = comboUp1_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 1){
-			sprite_index = comboUp2;
-			mask_index = comboUp2_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 2){
-			sprite_index = comboUp3;
-			mask_index = comboUp3_hb;
-			image_xscale = hfacing;
-		}
-	}
-	
-	else if attackDir > 20 && attackDir < 80{
-		hfacing = 1;
-		dir = 0;
-		if (comboCount = 0){
-			sprite_index = comboDiagUp1;
-			mask_index = comboUp1_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 1){
-			sprite_index = comboDiagUp2;
-			mask_index = comboDiagUp2_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 2){
-			sprite_index = comboDiagUp3;
-			mask_index = comboDiagUp3_hb;
-			image_xscale = hfacing;
-		}
-	}
-	
-	else if attackDir > 110 && attackDir < 160{
-		hfacing = -1;
-		dir = 0;
-		if (comboCount = 0){
-			sprite_index = comboDiagUp1;
-			mask_index = comboUp1_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 1){
-			sprite_index = comboDiagUp2;
-			mask_index = comboDiagUp2_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 2){
-			sprite_index = comboDiagUp3;
-			mask_index = comboDiagUp3_hb;
-			image_xscale = hfacing;
-		}
-	}
-	
-	else if attackDir > 290 && attackDir < 340{
-		hfacing = 1;
-		dir = 0;
-		if (comboCount = 0){
-			sprite_index = comboDiagDown1;
-			mask_index = comboUp1_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 1){
-			sprite_index = comboDiagDown2;
-			mask_index = comboDiagDown2_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 2){
-			sprite_index = comboDiagDown3;
-			mask_index = comboDiagDown3_hb;
-			image_xscale = hfacing;
-		}
-	}
-	
-	else if attackDir > 200 && attackDir < 250{
-		hfacing = -1;
-		dir = 0;
-		if (comboCount = 0){
-			sprite_index = comboDiagDown1;
-			mask_index = comboUp1_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 1){
-			sprite_index = comboDiagDown2;
-			mask_index = comboDiagDown2_hb;
-			image_xscale = hfacing;
-		}
-		else if (comboCount = 2){
-			sprite_index = comboDiagDown3;
-			mask_index = comboDiagDown3_hb;
-			image_xscale = hfacing;
+		//baixo
+		if(attackDir > 245) && (attackDir < 295){
+			sprite_index = StickAttackDown;
 		}
 	}
 }

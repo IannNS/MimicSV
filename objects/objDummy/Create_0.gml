@@ -3,16 +3,16 @@ alpha = 0;
 
 layer_enable_fx("ScreenShake", false);
 
-function StatePatrol(){
+function StateHitMe(){
 	objDummy.image_index = 0;
 	
-	if(place_meeting(x, y, ObjPlayer) && ObjPlayer.state = StateCombat){
+	if(place_meeting(x, y, ObjPlayer) && ObjPlayer.state = StateCombat) || (place_meeting(x, y, ObjWeapon) && ObjWeapon.state = StickAttacking){
 		global.currentRage += 5;
 		alarm[0] = 30;
 		
 		alpha = 1;
 		layer_enable_fx("ScreenShake", true);
-		state = StateTookDamage;
+		state = StateItHurts;
 		hitDir = point_direction(x, y, mouse_x, mouse_y);
 		
 		dmgPart = part_system_create(damageParticle);
@@ -22,8 +22,8 @@ function StatePatrol(){
 	}
 }
 
-function StateTookDamage(){
+function StateItHurts(){
 	//única função desse state é fazer com que a animação do dummy levando dano ocorra
 }
 
-state = StatePatrol;
+state = StateHitMe;

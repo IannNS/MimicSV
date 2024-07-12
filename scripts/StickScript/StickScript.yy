@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"StickScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"StickScript",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
