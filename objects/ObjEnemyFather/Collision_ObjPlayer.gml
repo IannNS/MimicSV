@@ -1,5 +1,6 @@
-/// @description Take Life away from the Player
-if canDealDamage = true && ObjPlayer.state != StateLongDodge && attackReady = true{
+/// @description Mecânicas de hit
+
+if (canDealDamage = true && ObjPlayer.state != StateLongDodge && attackReady = true){
 	attackReady = false;
 	canDealDamage = false;
 	alarm[0] = 60;
@@ -12,16 +13,3 @@ if canDealDamage = true && ObjPlayer.state != StateLongDodge && attackReady = tr
 	ObjPlayer.color = #f12000;
 	ObjPlayer.alpha = 1;
 }
-
-if canTakeDamage = true && ObjPlayer.state = StateCombat && attackReady = false{
-	canTakeDamage = false;
-	alarm[0] = 30;
-	
-	EnemyLife -= 1;
-}
-
-if EnemyLife = 0 && instance_exists{
-	instance_destroy();	
-}
-
-EnemyLife = clamp(EnemyLife, 0, 3);

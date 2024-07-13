@@ -46,7 +46,7 @@ if alarm[7] <= 0{
 	global.currentRage += 0.1;
 }
 
-if alarm[9] <= 0 && objMinorTank.los = true{
+if(instance_exists(objMinorTank) && alarm[9] <= 0 && objMinorTank.los = true){
 	lastSeenX = xprevious;
 	lastSeenY = yprevious;
 	alarm[9] = 50;

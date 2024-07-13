@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Dummy",
-    "path":"sprites/Dummy/Dummy.yy",
+    "name":"sprDummy",
+    "path":"sprites/sprDummy/sprDummy.yy",
   },
   "spriteMaskId":null,
   "visible":true,
