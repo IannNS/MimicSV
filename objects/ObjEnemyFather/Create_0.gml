@@ -20,5 +20,6 @@ function Collision(){
 
 canDealDamage = false;
 canTakeDamage = true;
-EnemyLife = 3;
+EnemyMaxLife = 3;
+EnemyCurrentLife = EnemyMaxLife;
 attackReady = true;

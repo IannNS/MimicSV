@@ -5,3 +5,6 @@ image_index = 1;
 // Inherit the parent event
 event_inherited();
 
+canTakeDamage = false;
+canDealDamage = true;
+

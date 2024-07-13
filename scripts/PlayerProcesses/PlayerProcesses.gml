@@ -35,8 +35,8 @@ function StateFree(){
 	}
 		
 
-//Função de colisões (possível alteração)
-function Collision(){
+	//Função de colisões (possível alteração)
+	function Collision(){
 		var targetX = x;
 		var targetY = y;
 		
@@ -52,8 +52,9 @@ function Collision(){
 		
 		repeat(distanceY){
 			if !place_meeting(x, y + sign(targetY - y), all) y += sign(targetY - y);
+		}
 	}
-}
+	
 	//animção de movimentação
 	if hmovement != 0 or vmovement != 0{
 			
@@ -169,6 +170,7 @@ function Collision(){
 		alarm[2] = 40;
 			
 		attackDir = point_direction(x, y, mouse_x, mouse_y);
+		
 		state = StateCombat;
 	}
 		
@@ -183,12 +185,24 @@ function StateLongDodge(){
 	hmovement = lengthdir_x(dodgeSpeed, dodgeDir);
 	vmovement = lengthdir_y(dodgeSpeed, dodgeDir);
 	
+	//baixo
 	if dodgeDir = 270{
 		sprite_index = dodgeDown;
 	}
-	else if dodgeDir = 45 or dodgeDir = 0 or dodgeDir = 135 or dodgeDir = 315 or dodgeDir = 180 or dodgeDir = 225{
+	
+	//lado direito
+	else if dodgeDir = 45 or dodgeDir = 0 or dodgeDir = 315{
+		hfacing = 1;
 		sprite_index = dodgeSide;
 	}
+	
+	//lado esquerdo
+	else if dodgeDir = 135 or dodgeDir = 180 or dodgeDir = 225{
+		hfacing = -1;
+		sprite_index = dodgeSide;
+	}
+	
+	//cima
 	else if dodgeDir = 90{
 		sprite_index = dodgeUp;
 	}
@@ -212,7 +226,6 @@ function StateShortDodge(){
 }
 	
 function StateCombat(){
-	
 	if(instance_exists(ObjWeapon)){
 		//lados
 		if(attackDir < 65) || (attackDir > 295) || (attackDir > 115) || (attackDir < 245){

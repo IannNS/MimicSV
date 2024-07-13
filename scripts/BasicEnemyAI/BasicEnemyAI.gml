@@ -176,6 +176,4 @@ function StateAttacking(){
 			state = StateAttack;
 		break;
 	}
-	
-	show_debug_message(chooseAttack);
 }

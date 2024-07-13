@@ -19,5 +19,5 @@ else{
 
 script_execute(state);
 
-// Inherit the parent event
+//Inherit the parent event
 event_inherited();
